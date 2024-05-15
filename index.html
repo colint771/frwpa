@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" src="src/custom.css">
+    <link rel="stylesheet" src="dist/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Workplace Answers</title>
+</head>
+<body class="bg-white font-sans">
+    <div>
+        <header class="bg-white-200 py-6 px-4 flex justify-between items-center">
+            <div>
+              <img src="public/images/Workplace-Answers-Logo-Red.png" alt="WP Answers Logo" class="w-32">
+            </div>
+              <nav>
+                <ul class="flex justify-end space-x-10 p-4">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#government">Government</a></li>
+                  <li><a href="#community">Community</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+          </header>
+        <section id="home">
+                <!-- Carousel -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="public/images/fwconnectrac/EX-UN-Conference-Room-1.jpg" alt="image 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="public/images/fwconnectrac/EX-ON-Conderence-Room.jpg" alt="image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="public/images/fwconnectrac/pic 3.JPG" alt="image 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="public/images/fwconnectrac/pic 4.JPG" alt="image 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="public/images/fwwebsiteadditions/Arthur-Boss-Design-Sofa-1.jpg" alt="image 5" class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="public/images/fwwebsiteadditions/Kato-Web-London-Showroom.jpg" alt="image 5" class="swiper-slide">
+                        </div>
+                    </div>
+                </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- <button class="carousel-control-prev">&lt;</button>
+                    <button class="carousel-control-next">&gt;</button> -->
+                </div>
+              <!-- carousel styling -->
+              <style>
+                /* Ensures the swiper fills the container */
+                .swiper {
+                  width: 100%;
+                  height: auto;
+                }
+                .swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  display: flex;
+                  background: #fff;
+              
+                  /* Center slide text vertically */
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+              </style>
+              
+              <!-- End of carousel section -->
+              <!-- Start of Partner logos and descriptions -->
+
+            <!-- Subscribe Section -->
+            <div class="bg-white p-8">
+                <div class="text-center mb-6">
+                    <h2 class="text-xl font-bold mb-3">Subscribe Now!</h2>
+                    <input type="email" placeholder="Your email" class="border border-gray-300 p-2 rounded-md w-1/2 mb-4">
+                    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Subscribe</button>
+                </div>
+                <!-- Bottom links -->
+                <div class="flex justify-between">
+                    <div class="space-y-4">
+                        <p><a href="#home">Home </a></p>
+                        <p><a href="#Contact">Contact Us</a></p>
+                        <p><a href=#terms>Terms & Conditions</a></p>
+                        <p><a href="#privacy">Privacy Policy</a></p>
+                    </div>
+                    <!-- About, Contact, address -->
+                    <div class="max-w-md">
+                        <h3 class="text-lg font-bold">ABOUT</h3>
+                        <p>We're all in! Our line selections provide solutions in the major vertical markets, corporate, healthcare, and education. With the manufactures in our portfolio, we can deliver furniture products that achieve a design vision and remain within budget and time parameters. Also, custom-made furniture options are available to fit the requirements of the project.</p>
+                        <p><strong>CALL</strong> 404-580-6716</p>
+                        <p><strong>FAX</strong> 678-623-9002</p>
+                        <p><strong>ADDRESS</strong> 2135 Defoor Hills Rd Ste E Atlanta, GA 30318</p>
+                    </div>
+                </div>
+        </section>
+
+        </section>
+
+        <footer class="text-center py-6">
+            <p>© 2024 Workplace Answers</p>
+        </footer>
+    </div>
+    <script src="postcss.config.js"></script>
+    <script src="tailwind.config.js"></script>
+    <script src="src/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- script for carousel -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+      
+</body>
+</html>
